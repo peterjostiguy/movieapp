@@ -12,5 +12,9 @@ function config($stateProvider, $urlRouterProvider) {
     url: 'movies/:title',
     controller: 'MovieController',
     templateUrl: 'js/views/movies.html'
+  }).state('home.details',{
+    url: 'movie:id',
+    controller: 'DetailsController',
+    templateUrl: 'js/views/details.html'
   })
 }
